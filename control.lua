@@ -1,8 +1,8 @@
-if not global.shelter then
-	global.shelter = {}
+if not storage.shelter then
+	storage.shelter = {}
 end
-if not global.shelter.script_initialization_status then
-	global.shelter.script_initialization_status = {}
+if not storage.shelter.script_initialization_status then
+	storage.shelter.script_initialization_status = {}
 end
 
 local path = "__shelter-k2__/"
@@ -17,7 +17,7 @@ require(path .. "scripts/shelter.lua")
 --        script.on_init(fn)
 --    elseif event_name == "on_configuration_changed" then
 --        script.on_configuration_changed(fn)
---    else 
+--    else
 --        script.on_event(event_name,fn,filter)
 --    end
 --end

@@ -1,0 +1,20 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 2024-24-10
+  Changes:
+    - added support for space age
+---------------------------------------------------------------------------------------------------
+Version: 0.0.2
+Date: 2021-06-18
+  Features:
+    - added this changelog
+  Changes:
+    - added thumbnail to mod page
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2021-06-18
+  Features:
+    - inital mod from krastorio2 shelter extracted
+  Notes:
+    - no notification is visible when attempting to place a second shelter
+    - this mod will be balanced in the near future if needed via playthroughs to be easy to obtain early in the game to make respawning easier on death worlds
