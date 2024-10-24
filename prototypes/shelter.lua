@@ -5,64 +5,62 @@ local prototypes_path = path .. "prototypes/"
 local entities_path = images_path .. "entities/"
 local sound_path = path .. "sounds/"
 
-data:extend(
-{
-    -- image
-    {
-        type     = "sprite",
-        name     = "kr-shelter-preview",
-        filename = images_path .. "shelter-preview.png",
-        width    = 408,
-        height   = 265
-    },
-    -- item
+data:extend({
+	-- image
+	{
+		type = "sprite",
+		name = "kr-shelter-preview",
+		filename = images_path .. "shelter-preview.png",
+		width = 408,
+		height = 265,
+	},
+	-- item
 	{
 		type = "item",
 		name = "kr-shelter",
-		icon =  images_path .. "shelter.png",
+		icon = images_path .. "shelter.png",
 		icon_size = 64,
 		subgroup = "storage",
 		order = "aaa",
 		place_result = "kr-shelter",
-		stack_size = 1
-    },
-    -- recipe
-    {
+		stack_size = 1,
+	},
+	-- recipe
+	{
 		type = "recipe",
 		name = "kr-shelter",
 		energy_required = 10,
 		enabled = false,
-		ingredients =
-		{
-			{"iron-plate", 25},
-			{"copper-cable", 10},
-			{"coal", 50}
+		ingredients = {
+			{ type = "item", name = "iron-plate", amount = 25 },
+			{ type = "item", name = "copper-cable", amount = 10 },
+			{ type = "item", name = "coal", amount = 50 },
 		},
-		result = "kr-shelter"
-    },
-    -- research
-    {
+		results = {
+			{ type = "item", name = "kr-shelter", amount = 1 },
+		},
+	},
+	-- research
+	{
 		type = "technology",
 		name = "kr-shelter",
 		mod = "shelter-k2",
 		icon = images_path .. "shelter.png",
 		icon_size = 64,
-		effects =
-		{
+		effects = {
 			{
 				type = "unlock-recipe",
-				recipe = "kr-shelter"
-			}
-		},
---		prerequisites = {""},
-		unit =
-		{
-			count = 20,
-			ingredients = 
-			{
-				{"automation-science-pack", 1}
+				recipe = "kr-shelter",
 			},
-			time = 30
-		}
-    }
+		},
+		--		prerequisites = {""},
+		unit = {
+			count = 20,
+			ingredients = {
+				{ "automation-science-pack", 1 },
+			},
+			time = 30,
+		},
+	},
 })
+
