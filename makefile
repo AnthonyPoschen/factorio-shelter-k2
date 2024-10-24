@@ -3,7 +3,8 @@ APPDATA := $(shell /mnt/c/Windows/System32/cmd.exe /C "echo %APPDATA%" | sed -e 
 .PHONY: build copy
 
 build:
-	@mkdir build && mkdir ../$(FILENAME) && cp -r ./ ../$(FILENAME)/ && rm -rf ../$(FILENAME)/.git ../$(FILENAME)/makefile ../$(FILENAME)/build && mv ../$(FILENAME) ./build/$(FILENAME)
+	@rm -r build || true
+	@mkdir -p build && mkdir -p ../$(FILENAME) && cp -r ./ ../$(FILENAME)/ && rm -rf ../$(FILENAME)/.git ../$(FILENAME)/makefile ../$(FILENAME)/build && mv ../$(FILENAME) ./build/$(FILENAME)
 	@cd build && zip -r ../$(FILENAME).zip ./ && cd ../ && rm -rf build
 
 copy:
@@ -13,3 +14,5 @@ copy:
 
 run: build copy
 
+wsl-setup:
+	apt get jq zip make
