@@ -113,6 +113,16 @@ data:extend({
 		minable = { mining_time = 0.5, result = "kr-shelter" },
 		collision_box = { { -2.72, -2.72 }, { 2.72, 2.72 } },
 		selection_box = { { 0, 0 }, { 0, 0 } },
+		resistances = {
+			{ type = "physical", percent = 100 },
+			{ type = "fire", percent = 100 },
+			{ type = "impact", percent = 100 },
+			{ type = "poison", percent = 100 },
+			{ type = "explosion", percent = 100 },
+			{ type = "laser", percent = 100 },
+			{ type = "acid", percent = 100 },
+			{ type = "electric", percent = 100 },
+		},
 		animation = shelter_animation,
 		continuous_animation = true,
 		energy_source = {
