@@ -1,28 +1,28 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
-Date: 2026-13-02
+Date: 2026.06.24
   Features:
     - added support for factorio 2.1
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.4
-Date: 2026-13-02
+Date: 2026.02.13
   Bugfixes:
     - Electrical output continues to work when damaged - fixed by bradythehuman
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.3
-Date: 2024-24-10
+Date: 2024.10.24
   Changes:
     - added support for space age
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.2
-Date: 2021-06-18
+Date: 2021.06.18
   Features:
     - added this changelog
   Changes:
     - added thumbnail to mod page
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
-Date: 2021-06-18
+Date: 2021.06.18
   Features:
     - inital mod from krastorio2 shelter extracted
   Notes:
